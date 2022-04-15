@@ -225,7 +225,7 @@
 }
 
 .image-mini__item {
-    min-width: 90px;
+    max-width: 130px;
     height: 68px;
     background-color: #DCDCDC;
     border-radius: 17px;
@@ -285,4 +285,11 @@
     line-height: 16px;
     color: #000000;
     padding: 9px 0 0 19px;
+}
+
+
+@media (min-width: 375px) {
+    .container {
+        padding: 0 30px;
+    }
 }

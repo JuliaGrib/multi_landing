@@ -5,9 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
-.header {
+/* .header {
     background-color: black;
     width: 100%;
     color: white;
@@ -62,23 +63,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1440px) {
     .container {
         max-width: 1140px;
@@ -104,4 +88,43 @@
     .header-burger {
         display: block;
     }
+}
+ */
+
+
+ .header {
+     width: 100%;
+     background-color: black;
+     padding: 10px 10px;
+ }
+
+ .container {
+     min-width: 300px;
+     margin: 0 auto;
+ }
+
+ .header-nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logo {
+     width: 90px;
+ }
+
+ .header-logo {
+     width: 100%;
+ }
+
+ .header-menu {
+     display: none;
+ }
+
+ .header-menu__list {
+     display: none;
+ }
+ .header-menu__link {
+    text-decoration: none;
+    font-size: 13px;
 }

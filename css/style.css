@@ -8,8 +8,14 @@
     
 }
 
+:root {
+    --header-bg-color: #000000;
+    --header-link-color: white;
+    --header-link-hover-color: #9191C6;
+}
+
 .header {
-    background-color: black;
+    background-color: var(--header-bg-color);
     width: 100%;
     color: white;
     padding: 12px 0;
@@ -23,6 +29,12 @@
 
 .header-logo {
     width: 100px;
+}
+.logo {
+    transition-duration: 0.3s;
+}
+.logo:hover {
+    filter: invert(15%) sepia(79%) saturate(1258%) hue-rotate(220deg) brightness(101%) contrast(93%);
 }
 
 .header-nav {
@@ -45,7 +57,12 @@
 }
 
 .header-menu__link {
-    color: white;
+    color: var(--header-link-color);
+    transition-duration: 0.3s;
+}
+.header-menu__link:hover {
+    /* color: var(--header-link-hover-color); */
+    filter: invert(15%) sepia(79%) saturate(1258%) hue-rotate(220deg) brightness(101%) contrast(93%);
 }
 
 .link {
@@ -61,6 +78,36 @@
     display: none;
 }
 
+
+/* Баннер */
+
+.banner-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 50px 0;
+    
+}
+
+.banner-main {
+    max-width: 925px;
+    font-size: 0px;
+    margin: 0 27px 0 0;
+}
+.banner-main img{
+    width: 100%;
+}
+
+.banner-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner-small {
+    max-width: 298px;
+}
+.banner-small img{
+    width: 100%;
+}
 
 
 @media (max-width: 1440px) {

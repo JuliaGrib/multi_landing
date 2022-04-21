@@ -104,6 +104,7 @@
 }
 .banner-small {
     max-width: 298px;
+    font-size: 0px;
 }
 .banner-small img{
     width: 100%;
@@ -134,6 +135,24 @@
     }
     .header-burger {
         display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-content{
+        flex-direction: column;
+        
+    }
+    .banner-main {
+        margin: 0 0 30px 0;
+    }
+    .banner-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .banner-small {
+        max-width: 217px;
+        font-size: 0px;
     }
 }
 

@@ -261,7 +261,7 @@
 /* Оформить заказ */
 
 .order {
-    padding: 80px 0 60px 0;
+    padding: 80px 0 100px 0;
     background-color: var(--colors-bg-color);
 }
 
@@ -382,4 +382,83 @@
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+
+
+/* Футер */
+
+
+footer {
+    padding: 80px 0 80px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    max-width: 300px;
+    margin: 0 30px 0 0;
+}
+.logo {
+    width: 140px;
+}
+.logo img {
+    width: 100%;
+}
+.footer-logo p {
+    padding: 20px 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+.footer-title {
+    padding: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer-production  {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 0;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 0;
+}
+.footer-contacts  {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 0;
+}
+.footer-time {
+    padding: 20px 0 20px 0;
+}
+.footer-link {
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.footer-link:hover {
+    color: #212b7e;
+}
+
+.btn-link {
+    padding: 15px 0 0 23px;
+    display: inline-block;
+    text-decoration: none;
+    width: 156px;
+    height: 50px;
+    background-color: #c9243f;
+    border-radius: 34px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }

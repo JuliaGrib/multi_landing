@@ -214,7 +214,7 @@ border-radius: 34px;
 
 .product-item {
     display: flex;
-    border: 1px solid #ededed;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 34px;
     padding: 30px 30px;
     margin: 50px auto 0;
@@ -288,13 +288,13 @@ border-radius: 34px;
     color: var(--li--product--color);
 }
 .white-btn {
-    background: var(--white--btn--bg);
-    border: 1px solid #000000;
+    background: var(--white--btn--hover);
+    /* border: 1px solid #000000; */
     border-radius: 50px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: var(--white--btn--color);
+    color: white;
     text-decoration: none;
     padding: 20px 60px;
     transition-duration: 0.3s;
@@ -302,7 +302,6 @@ border-radius: 34px;
 .white-btn:hover {
     background-color: var(--white--btn--hover);
     color: var(--white--btn--hover-color);
-    border: 1px solid var(--white--btn--hover);
 }
 
 /* Оформить заказ */
@@ -323,15 +322,15 @@ border-radius: 34px;
 .form-content {
     margin: 80px 0 0 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form-block {
     background-color: white;
-    width: 600px;
-    height: 752px;
+    width: 545px;
     border-radius: 34px;
-    padding: 54px 55px 80px 55px;
+    padding: 54px 55px 55px 55px;
+    transition-duration: 0.3s;
 }
 .form-title {
     font-weight: 700;
@@ -342,27 +341,34 @@ border-radius: 34px;
 .form-main {
     padding: 45px 0 0 0;
 }
+.form-block:hover {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 34px;
+    cursor: pointer;
+}
 .form-elem {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 .form-elem label {
     display: block;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
     color: #000000;
 }
 .form-elem select {
     margin: 10px 0 0 0;
     border-radius: 34px;
-    height: 60px;
+    height: 45px;
     width: 100%;
     border: 1px solid black;
 }
 .form-elem input {
     margin: 10px 0 0 0;
     border-radius: 34px;
-    height: 60px;
+    height: 45px;
     width: 100%;
     border: 1px solid black;
 }
@@ -371,26 +377,25 @@ border-radius: 34px;
     justify-content: space-between;
 }
 .form-two-elem .form-elem{
-    flex-basis: 45%;
+    flex-basis: 48%;
 }
 .form-main button {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     margin: 25px 0 0 0;
-    width: 268px;
+    width: 206px;
     height: 59px;
     border-radius: 34px;
     background-color: #c9243f;
     color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 23px;
     outline: none;
     border: none;
     cursor: pointer;
 }
-
 
 
 /* Футер */

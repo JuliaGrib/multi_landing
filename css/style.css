@@ -114,6 +114,7 @@
 }
 .banner-main img{
     width: 100%;
+    border-radius: 34px;
 }
 
 .banner-group {
@@ -124,9 +125,11 @@
 .banner-small {
     max-width: 298px;
     font-size: 0px;
+    border-radius: 34px;
 }
 .banner-small img{
     width: 100%;
+    border-radius: 18px;
 }
 
 /* Цвета */

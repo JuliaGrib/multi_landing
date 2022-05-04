@@ -144,12 +144,74 @@
     color: #FFFFFF;
 }
 
+.coatings {
+    padding: 50px 0 50px 0;
+    background-color: rgba(218, 218, 218, 0.17);;
+}
+
+.coating-elements {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.coating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+}
+.coating-elements p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
 
 
+.coating-item__title {
+    padding: 30px 0 0 0;
+}
+.coating-item__title span{
+    font-weight: 700;
 
+}
+.coating-item__descr {
+    padding: 10px 0 0 0;
+}
 
+.postavka {
+    padding: 60px 0 60px 0;
+}
+.postavka-elements {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-
+}
+.razbor {
+    max-width: 490px;
+    margin: 20px;
+    padding: 40px 40px 30px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+}
+.sbor {
+    max-width: 490px;
+    margin: 20px;
+    padding: 40px 40px 30px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+}
+.razbor img {
+    margin: 40px 0 0 0;
+    max-width: 100%;
+}
+.sbor img {
+    margin: 40px 0 0 0;
+    max-width: 100%;
+}
 
 @media (max-width: 1440px) {
     .product__product-item {
@@ -164,6 +226,14 @@
         
         padding: 15px 0 0 40px;
         width: 142px;
+    }
+    .razbor {
+        
+        padding: 30px 30px 30px 30px;
+    }
+    .sbor {
+        
+        padding: 30px 30px 30px 30px;
     }
 }
 
@@ -186,6 +256,7 @@
         padding: 15px 0 0 47px;
         width: 154px;
     }
+
 }
 
 @media (max-width: 1024px) {
@@ -195,7 +266,22 @@
     .product-banner__banner {
         margin: 40px 0 0 0;
     }
-
+    .razbor {
+        max-width: 427px;
+    }
+    .sbor {
+        max-width: 427px;
+    }
+}
+@media (max-width: 994px) {
+    .razbor {
+        max-width: 340px;
+        margin: 20px 10px;
+    }
+    .sbor {
+        max-width: 340px;
+        margin: 20px 10px;
+    }
 }
 @media (max-width: 884px) {
     .product__product-item {
@@ -247,6 +333,16 @@
         padding: 16px 0 0 34px;
         width: 124px;
         font-size: 13px;
+    }
+    @media (max-width: 994px) {
+        .razbor {
+            max-width: 276px;
+            margin: 10px 10px;
+        }
+        .sbor {
+            max-width: 276px;
+            margin: 10px 10px;
+        }
     }
 }
 

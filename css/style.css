@@ -188,7 +188,7 @@ border-radius: 34px;
 }
 .color-item__descr {
     padding: 15px 0 0 0;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: var(--p--colors-descr);
 }
@@ -202,10 +202,11 @@ border-radius: 34px;
 
 }
 .products {
-    padding: 80px 0 30px 0;
+    padding: 80px 0 20px 0;
+    
 }
 .products-content {
-    padding: 30px 0 60px 0;
+    padding: 10px 0 60px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,8 +214,9 @@ border-radius: 34px;
 }
 
 .product-item {
+    background-color: #f5f5f58c;
     display: flex;
-    border: 1px solid #ededed;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 34px;
     padding: 30px 30px;
     margin: 50px auto 0;
@@ -257,7 +259,7 @@ border-radius: 34px;
 .product-list__item {
     padding: 0 0 20px 0;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
     color: var(--li--product--color);
 }
@@ -273,6 +275,7 @@ border-radius: 34px;
     display: flex;
     padding: 20px 0 0 0;
     align-items: center;
+    justify-content: space-between;
 }
 .price {
     font-weight: 400;
@@ -288,27 +291,26 @@ border-radius: 34px;
     color: var(--li--product--color);
 }
 .white-btn {
-    background: var(--white--btn--bg);
-    border: 1px solid #000000;
+    background: var(--white--btn--hover);
+    /* border: 1px solid #000000; */
     border-radius: 50px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
-    color: var(--white--btn--color);
+    color: white;
     text-decoration: none;
-    padding: 20px 60px;
+    padding: 20px 50px;
     transition-duration: 0.3s;
 }
 .white-btn:hover {
     background-color: var(--white--btn--hover);
     color: var(--white--btn--hover-color);
-    border: 1px solid var(--white--btn--hover);
 }
 
 /* Оформить заказ */
 
 .order {
-    padding: 80px 0 100px 0;
+    padding: 50px 0 80px 0;
     background-color: var(--colors-bg-color);
 }
 
@@ -321,17 +323,19 @@ border-radius: 34px;
 /* Форма */
 
 .form-content {
-    margin: 80px 0 0 0;
+    margin: 40px 0 0 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .form-block {
+    margin: 30px 0 0 0;
     background-color: white;
-    width: 600px;
-    height: 752px;
+    width: 545px;
     border-radius: 34px;
-    padding: 54px 55px 80px 55px;
+    padding: 54px 55px 55px 55px;
+    transition-duration: 0.3s;
 }
 .form-title {
     font-weight: 700;
@@ -342,27 +346,34 @@ border-radius: 34px;
 .form-main {
     padding: 45px 0 0 0;
 }
+.form-block:hover {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 34px;
+    cursor: pointer;
+}
 .form-elem {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 .form-elem label {
     display: block;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
     color: #000000;
 }
 .form-elem select {
     margin: 10px 0 0 0;
     border-radius: 34px;
-    height: 60px;
+    height: 45px;
     width: 100%;
     border: 1px solid black;
 }
 .form-elem input {
     margin: 10px 0 0 0;
     border-radius: 34px;
-    height: 60px;
+    height: 45px;
     width: 100%;
     border: 1px solid black;
 }
@@ -371,26 +382,24 @@ border-radius: 34px;
     justify-content: space-between;
 }
 .form-two-elem .form-elem{
-    flex-basis: 45%;
+    flex-basis: 48%;
 }
 .form-main button {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     margin: 25px 0 0 0;
-    width: 268px;
-    height: 59px;
+    padding: 20px 60px;
     border-radius: 34px;
     background-color: #c9243f;
     color: white;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
     outline: none;
     border: none;
     cursor: pointer;
 }
-
 
 
 /* Футер */
@@ -459,17 +468,16 @@ footer {
 }
 
 .btn-link {
-    padding: 15px 0 0 23px;
+    padding: 20px 40px;
     display: inline-block;
     text-decoration: none;
-    width: 156px;
-    height: 50px;
+
     background-color: #c9243f;
     border-radius: 34px;
     color: white;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 16px;
 }
 
 @media (max-width: 1440px) {
@@ -618,6 +626,27 @@ footer {
     .banner-group {
         display: none;
     }
+    .main-img {
+        width: 310px;
+    }
+    .product-list {
+        max-width: 310px;
+    }
+    .product-price {
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
+    .price span {
+        font-size: 27px;
+        margin: 0 0 0 0;
+    }
+    .price {
+        margin: 0 0px 27px 0px;
+    }
+    .product-descr {
+        max-width: 310px;
+        font-size: 14px;
+    }
 }
 @media (max-width: 661px) {
     .footer-btn {
@@ -634,15 +663,14 @@ footer {
 }
 
 @media (max-width: 660px) {
-    .main-img {
-        width: 460px;
-    }
-    .price span {
-        font-size: 30px;
-    }
+
     .white-btn {
         padding: 15px 40px;
     }
+    .form-two-elem {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 564px) {
@@ -704,9 +732,34 @@ footer {
 
 
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
+    .product-item {
+        padding: 15px 15px;
+    }
 
-    
+    .main-img {
+        width: 256px;
+    }
+    .product-descr {
+        max-width: 526px;
+    }
+    .product-list {
+        max-width: 256px;
+    }
+    .product-price {
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
+    .price span {
+        font-size: 27px;
+        margin: 0 0 0 0;
+    }
+    .price {
+        margin: 0 0px 27px 0px;
+    }
+    .form-block {
+        padding: 30px;
+    }
 
 }
 @media (max-width: 375px) {

@@ -60,7 +60,7 @@
     padding: 40px 40px;
     max-width: 400px;
     border: 1px solid rgba(0, 0, 0, 0.06);
-    border-radius: 18px;
+    border-radius: 34px;
     background-color: #f5f5f58c;
 }
 
@@ -114,16 +114,20 @@
     height: 50px;
     left: 364px;
     top: 1086px;
-    border: 1px solid rgba(0, 0, 0, 0.22);
+    border: 2px solid rgba(78, 132, 196);
     box-sizing: border-box;
-    border-radius: 6px;
-
+    border-radius: 34px;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 151.19%;
     color: #000000;
+    transition: all 0.3s ease 0s;
+}
+.learn-more:hover {
+    background-color: rgba(78, 132, 196);
+    color: white;
 }
 
 .product-order {
@@ -133,8 +137,8 @@
     height: 50px;
     left: 530px;
     top: 1086px;
-    background: #ADADAD;
-    border-radius: 6px;
+    background: rgba(78, 132, 196);
+    border-radius: 34px;
 
     text-decoration: none;
     font-style: normal;
@@ -160,6 +164,9 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 30px;
+}
+.coating-item img {
+    border-radius: 50%;
 }
 .coating-elements p {
     font-weight: 400;

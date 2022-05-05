@@ -21,7 +21,7 @@
     --white--btn--bg: white;
     --white--btn--color: #000000;
     --white--btn--border: #000000;
-    --white--btn--hover: #c9243f;
+    --white--btn--hover: rgb(78, 132, 196);
     --white--btn--hover-color: white;
     
 }
@@ -291,13 +291,12 @@ border-radius: 34px;
     color: var(--li--product--color);
 }
 .white-btn {
-    background: var(--white--btn--hover);
-    /* border: 1px solid #000000; */
+    border: 2px solid rgb(78, 132, 196);
     border-radius: 50px;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 20px 50px;
     transition-duration: 0.3s;
@@ -406,6 +405,7 @@ border-radius: 34px;
 
 
 footer {
+    background-color: #f5f5f58c;
     padding: 80px 0 80px 0;
 }
 .footer-content {
@@ -479,6 +479,82 @@ footer {
     font-size: 15px;
     line-height: 16px;
 }
+
+
+.left-menu {
+    padding: 40px;
+    display: block;
+    right: -320px;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    background: #ffffff;
+    width: 320px;
+    height: 100%;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.left-menu__active {
+    right: 0;
+    
+}
+.burger-logo{
+    width: 144px;
+}
+.header-burger {
+    position: relative;
+    z-index: 10001;
+    transition: all 0.3s ease 0s;
+}
+.header-burger.active {
+    transform: rotate(90deg);
+}
+.header-burger-space {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.active-space {
+    display: block;
+}
+
+.header-menu-burger {
+    padding: 50px 0 0 0;
+}
+.header-menu-burger__list {
+    padding: 15px 0 0 0;
+}
+
+.header-menu-burger__link {
+    text-decoration: none;
+}
+.burger-line {
+    margin: 15px 0 0 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(78, 132, 196);
+}
+
+.burger-phone {
+    padding: 40px 0 0 0;
+}
+.burger-phone a {
+    display: block;
+}
+
+.overflow-h{
+    overflow: hidden;
+}
+
+
+
 
 @media (max-width: 1440px) {
     .container {

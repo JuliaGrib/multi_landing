@@ -198,11 +198,16 @@
 
 }
 .razbor {
+    position: relative;
     max-width: 490px;
     margin: 20px;
     padding: 40px 40px 30px 40px;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 18px;
+}
+.action-30 {
+    position: absolute;
+    width: 100px;
 }
 .sbor {
     max-width: 490px;
@@ -211,7 +216,7 @@
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 18px;
 }
-.razbor img {
+.razbor-img {
     margin: 40px 0 0 0;
     max-width: 100%;
 }
@@ -340,6 +345,10 @@
         padding: 16px 0 0 34px;
         width: 124px;
         font-size: 13px;
+    }
+    .action-30 {
+        position: absolute;
+        width: 63px;
     }
     @media (max-width: 994px) {
         .razbor {

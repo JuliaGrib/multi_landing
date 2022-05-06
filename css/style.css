@@ -390,7 +390,7 @@ border-radius: 34px;
     margin: 25px 0 0 0;
     padding: 20px 60px;
     border-radius: 34px;
-    background-color: #c9243f;
+    background-color: rgb(78, 132, 196);
     color: white;
     font-weight: normal;
     font-size: 15px;
@@ -472,7 +472,7 @@ footer {
     display: inline-block;
     text-decoration: none;
 
-    background-color: #c9243f;
+    background-color: rgb(78, 132, 196);
     border-radius: 34px;
     color: white;
     font-weight: 400;
@@ -796,9 +796,7 @@ footer {
     .footer-production {
         margin: 0 0px 0 0;
     }
-    .btn-link {
-        padding: 15px 0 0 0px;
-    }
+
     footer {
         padding: 50px 0 50px 0;
     }
